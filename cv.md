@@ -21,7 +21,8 @@ My goal is to become a Software Architect with deep expertise in Node.js. I am i
     * **Analytical Mindset:** Ability to decompose complex systems and identify logical vulnerabilities.
     * **Self-Learner:** Proven ability to master new tools (AI, complex hardware APIs) independently.
     * **Critical Thinking:** A skeptical approach to ready-made solutions, aiming to understand the underlying mechanics.
-    * **Systems Thinking:** Focusing on how individual components integrate into a larger architecture.
+    * **Systems Thinking:** Focusing on how individual components integrate into a larger architecture.  
+
 ---
 ### Code Examples
 **[Calculate average](https://www.codewars.com/kata/57a2013acf1fa5bfc4000921) task from Codewars:**  
@@ -41,6 +42,7 @@ function findAverage(array) {
   }
 }
 ```
+
 ---
 ### Experience
 *Note: These projects were developed in a "vibecoding" format. My role was to act as a Product Owner and System Analyst: I conceptualized the entire business logic, designed the interaction algorithms, and strictly verified the AI-generated results to ensure they met the functional requirements.*
@@ -68,7 +70,8 @@ function findAverage(array) {
 * **Rolling Scopes School**
   * JS / Front-end Pre-school (2026Q1)
 * **Python Generation: Course for Beginners (Stepik)**
-  * [Certificate #2104885](https://stepik.org/cert/2104885?lang=en)
+  * [Certificate #2104885](https://stepik.org/cert/2104885?lang=en)  
+  
 ---
 ### Languages
 * **Russian:** Native
