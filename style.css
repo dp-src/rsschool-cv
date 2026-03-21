@@ -3,3 +3,50 @@
   margin: 0;
   padding: 0;
 }
+
+:root {
+  --nav-font-style: 18px Verdana, sans-serif;
+  --nav-background-color: rgb(55, 37, 84);
+  --link-hover-color: #cbbcff;
+  --nav-text-color: white;
+}
+
+/* Link styles */
+nav a:link, nav a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover, nav a:active {
+  color: var(--link-hover-color);
+  border-bottom: 3px dotted var(--link-hover-color);
+}
+
+/* Navigation and Footer */
+nav ul {
+  background-color: var(--nav-background-color);
+  color: var(--nav-text-color);
+  list-style-type: none;
+  text-transform: uppercase;
+  font: var(--nav-font-style);
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: space-around;
+  padding: 15px;
+}
+
+footer ul {
+  border-top: 2px solid gray;
+  padding: 20px;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 3%;
+  justify-content: space-between;
+}
+
+footer {
+  font: bold 14px Verdana, sans-serif;
+}
