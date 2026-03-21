@@ -1,12 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Darya Panova - CV</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <nav>
+            <ul>
+                <li><a href="#contacts">Contacts</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#languages">Languages</a></li>                
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#code-examples">Code Examples</a></li>              
+            </ul>
+        </nav>
+
+        <main>       
+             <header>
+                <img src="/photo.jpeg" alt="My photo" width="200" height="200">
+                <h1>Darya Panova</h1>
+                <p>Aspiring Software Developer</p>
+            </header>
+                <h2>Contact information</h2>
+                <ul>
+                    <li>Location: Temirtau, Kazakhstan</li>
+                    <li>Phone: +7 (707) 815-61-10</li>
+                    <li>E-mail: <a href="mailto:panovadv24@gmail.com" target="_blank">panovadv24@gmail.com</a></li>
+                    <li>Telegram: <a href="https://t.me/dp_src" target="_blank">@dp_src</a></li>
+                </ul>
+                <h2>Education</h2>
+                <ul>
+                    <li><a href="https://stepik.org/cert/2104885?lang=en" target="_blank">Stepik - Python Generation: Course for Beginners</a></li>
+                    <li>Rolling Scopes School - JS / Front-end Pre-school (2026Q1)</li>
+                </ul>
+
+                <h2>Skills</h2>
+                    <ul>
+                        <li>Git & GitHub</li>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>Basic Python (Algorithm implementation)</li>
+                    </ul>
+
+                <h2>Languages</h2>
+                <ul>
+                    <li>Russian: Native</li>
+                    <li>English: C1 Advanced (according to <a href="https://cert.efset.org/en/Lkf1v8" target="_blank">EF SET</a> test)</li>
+                </ul>
+
+                    <h2>About Me</h2>
+                    <p>Aspiring Developer. Currently taking a Frontend course to master JavaScript fundamentals and the principles of web services.</p>
+                    <p>I am not focused on design or visual styling. My interests lie in data processing logic, algorithms, and working with data structures. My goal is to gain the technical skills to manually implement projects that I currently prototype using AI tools.</p>
+                    <p>My long-term goal is to transition into Backend development and database management, where I can apply a structured and systematic approach.</p>
+
+                    <h2>Experience</h2>
+                    <p>Note: These projects were developed in a "vibecoding" format. My role was to act as a Product Owner and System Analyst: I conceptualized the entire business logic, designed the interaction algorithms, and strictly verified the AI-generated results to ensure they met the functional requirements.</p>
+                    
+                    <p>Seal Ring Selection Calculator (A customer-facing web utility for product discovery and price estimation)</p>
+                    <ul>
+                        <li>Algorithm Design: I designed a complex "dual-search" algorithm that cross-references user-defined size ranges (min/max) with both actual size and strict GOST standards. This ensures the system finds all viable matches even when physical dimensions and standard specifications differ.</li>
+                        <li>Commercial Logic: I conceptualized the logic for dynamic price range estimation based on custom user requirements.</li>
+                        <li>UX & Validation: I developed "foolproof" input scenarios to guide customers through technical parameters, preventing incorrect search queries and ensuring a smooth user journey.</li>
+                    </ul>
+                    
+                    <p>Access Control System Prototype (A local automation system for a commercial facility.)</p>
+                    <ul>
+                        <li>System Logic Design: I defined the logic for filtering and displaying statistics, visit logs, and time-tracking modules.</li>
+                        <li>Feature Concept: I conceptualized the "Registration Mode", where any hardware device can be dynamically assigned as a "registrar" to scan new cards based on specific access types.</li>
+                        <li>Integration Logic: I established the rules for how device access types interact with user permissions, including directional logic (Entry/Exit) for accurate history tracking.</li>
+                        <li>UX & Functional Specs: I designed the user flow and  functional requirements for the integrated Telegram bot.</li>
+                    </ul>
+
+                    <h2>Code Examples</h2>
+                    <p><a href="https://www.codewars.com/kata/57a2013acf1fa5bfc4000921" target="_blank">Calculate average</a> task from Codewars:</p>
+                    <p>Write a function which calculates the average of the numbers in a given array. Note: Empty arrays should return 0.</p>
+                    <pre>
+                        <code>
+function findAverage(array) {
+  let sum = 0;
+  if (array.length === 0) {
+    return 0;
+  } else {
+    for (let i = 0; i &lt; array.length; i++) {
+      sum += array[i];
+    }
+    return (sum / array.length);
+  }
+}    
+                        </code>
+                    </pre>         
+        </main>
+
+        <footer>
+            <ul>
+                <li><a href="https://github.com/dp-src" target="_blank"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" width="40" height="40"></a></li>
+                <li>2026</li>
+                <li><a href="https://rs.school/courses/javascript" target="_blank"><img src="https://raw.githubusercontent.com/rolling-scopes-school/tasks/master/tasks/cv/rs-school-logo.svg" alt="RS School" width="80px"></a></li>
+            </ul>
+            </footer>
+    </body>
 </html>
