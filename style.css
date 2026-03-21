@@ -6,24 +6,33 @@
 
 :root {
   --nav-font-style: 18px Verdana, sans-serif;
-  --nav-background-color: rgb(63, 63, 63);
-  --link-hover-color: #c9bcf9;
-  --nav-text-color: white;
+  --nav-background-color: rgb(255, 255, 255);
+  --link-hover-color: #9b0000;
   --max-width: 1000px;
   --padding: 40px;
   --border-color: rgb(32, 32, 32);
 }
 
 /* Link styles */
+a:link, a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #9b0000;
+}
+
 nav a:link, nav a:visited {
-  color: white;
+  color: rgb(0, 0, 0);
   text-decoration: none;
 }
 
 nav a:hover, nav a:active {
   color: var(--link-hover-color);
-  border-bottom: 2px solid var(--link-hover-color);
+  border-bottom: 3px dotted var(--link-hover-color);
 }
+
 
 /* Navigation and Footer */
 
@@ -31,23 +40,25 @@ body {
   max-width: var(--max-width);
   margin-left: auto;
   margin-right: auto;
-  border: 1px solid gray;
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
   font: 14px/1.5 Arial, sans-serif;
 }
 
+ul {
+  list-style-type: none;
+}
 nav {
   background-color: var(--nav-background-color);
-  color: var(--nav-text-color);
   font: var(--nav-font-style);
   text-transform: uppercase;
 }
 
 nav ul {
-  list-style-type: none;
   display: flex;
   flex-direction: row;
   gap: 20px;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 15px;
 }
 
@@ -58,7 +69,6 @@ footer {
 footer ul {
   border-top: 1px solid var(--border-color);
   padding: 10px 20px;
-  list-style-type: none;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -84,16 +94,29 @@ main {
     text-align: justify;
 }
 
+.photo {
+  border-radius: 50%;
+  display: block;
+  margin: 0px auto 20px auto;
+}
+
 header {
   padding: 0px 0px 20px 0px;
   text-transform: uppercase;
   line-height: normal;
+  text-align: center;
   }
 
+.job-title {
+  letter-spacing: 3.5px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
 address {
-  margin: 0px 0px 30px 0px;
+  margin: 0px 0px 40px 0px;
   padding: 20px 0px 0px 0px;
-  border-top: 4px solid var(--border-color);
+  border-top: 3px solid var(--border-color);
+  font-style: normal;
 }
 
 section {
@@ -106,5 +129,23 @@ h2 {
   border-top: 1px solid var(--border-color);
   border-bottom: 1px solid var(--border-color);
   padding: 10px 0px;
+  margin-bottom: 10px;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.contact-icon {
+  width: 25px;
+  background-color: var(--border-color);
+  padding: 3px;
+  margin-right: 10px;
+}
+
+.contact-type {
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  align-items: center;
   margin-bottom: 10px;
 }
