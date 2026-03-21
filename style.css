@@ -6,11 +6,12 @@
 
 :root {
   --nav-font-style: 18px Verdana, sans-serif;
-  --nav-background-color: rgb(49, 49, 49);
+  --nav-background-color: rgb(63, 63, 63);
   --link-hover-color: #c9bcf9;
   --nav-text-color: white;
   --max-width: 1000px;
-  --padding: 30px;
+  --padding: 40px;
+  --border-color: rgb(32, 32, 32);
 }
 
 /* Link styles */
@@ -31,6 +32,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   border: 1px solid gray;
+  font: 14px/1.5 Arial, sans-serif;
 }
 
 nav {
@@ -54,7 +56,7 @@ footer {
 }
 
 footer ul {
-  border-top: 1px solid gray;
+  border-top: 1px solid var(--border-color);
   padding: 10px 20px;
   list-style-type: none;
   display: flex;
@@ -67,17 +69,42 @@ footer ul {
 main {
   display: flex;
   flex-direction: row;
-  gap: 10px;
   padding: var(--padding);
 }
 
 .left-column {
   flex: 3;
+  padding: 0px var(--padding) 0px 0px;
 }
 
 .right-column {
   flex: 6;
   border-left: 2px solid gray;
   padding: 0px 0px 0px var(--padding);
+    text-align: justify;
 }
 
+header {
+  padding: 0px 0px 20px 0px;
+  text-transform: uppercase;
+  line-height: normal;
+  }
+
+address {
+  margin: 0px 0px 30px 0px;
+  padding: 20px 0px 0px 0px;
+  border-top: 4px solid var(--border-color);
+}
+
+section {
+  padding: 0px 0px var(--padding) 0px;
+}
+
+h2 {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+  padding: 10px 0px;
+  margin-bottom: 10px;
+}
