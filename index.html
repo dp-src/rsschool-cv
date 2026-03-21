@@ -10,7 +10,6 @@
     <body>
         <nav>
             <ul>
-                <li><a href="#contacts">Contacts</a></li>
                 <li><a href="#education">Education</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#languages">Languages</a></li>                
@@ -21,43 +20,59 @@
         </nav>
 
         <main>       
-             <header>
-                <img src="/photo.jpeg" alt="My photo" width="200" height="200">
-                <h1>Darya Panova</h1>
-                <p>Aspiring Software Developer</p>
-            </header>
-                <h2>Contact information</h2>
-                <ul>
-                    <li>Location: Temirtau, Kazakhstan</li>
-                    <li>Phone: +7 (707) 815-61-10</li>
-                    <li>E-mail: <a href="mailto:panovadv24@gmail.com" target="_blank">panovadv24@gmail.com</a></li>
-                    <li>Telegram: <a href="https://t.me/dp_src" target="_blank">@dp_src</a></li>
-                </ul>
-                <h2>Education</h2>
-                <ul>
-                    <li><a href="https://stepik.org/cert/2104885?lang=en" target="_blank">Stepik - Python Generation: Course for Beginners</a></li>
-                    <li>Rolling Scopes School - JS / Front-end Pre-school (2026Q1)</li>
-                </ul>
+            <div class="left-column">
+                <header>
+                    <img src="/photo.jpeg" alt="My photo" width="200">
+                    <h1>Darya Panova</h1>
+                    <p>Aspiring Software Developer</p>
+                </header>
 
-                <h2>Skills</h2>
+                <address id="contacts">
+                    <h2>Contact information</h2>
                     <ul>
-                        <li>Git & GitHub</li>
-                        <li>HTML5</li>
-                        <li>CSS3</li>
-                        <li>Basic Python (Algorithm implementation)</li>
+                        <li>Location: Temirtau, Kazakhstan</li>
+                        <li>Phone: +7 (707) 815-61-10</li>
+                        <li>E-mail: <a href="mailto:panovadv24@gmail.com" target="_blank">panovadv24@gmail.com</a></li>
+                        <li>Telegram: <a href="https://t.me/dp_src" target="_blank">@dp_src</a></li>
                     </ul>
+                </address>
 
-                <h2>Languages</h2>
-                <ul>
-                    <li>Russian: Native</li>
-                    <li>English: C1 Advanced (according to <a href="https://cert.efset.org/en/Lkf1v8" target="_blank">EF SET</a> test)</li>
-                </ul>
+                <section id="education">
+                    <h2>Education</h2>
+                    <ul>
+                        <li><a href="https://stepik.org/cert/2104885?lang=en" target="_blank">Stepik - Python Generation: Course for Beginners</a></li>
+                        <li>Rolling Scopes School - JS / Front-end Pre-school (2026Q1)</li>
+                    </ul>
+                </section>
 
+                <section id="skills">
+                    <h2>Skills</h2>
+                        <ul>
+                            <li>Git & GitHub</li>
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>Basic Python (Algorithm implementation)</li>
+                        </ul>
+                </section>
+
+                <section id="languages">
+                    <h2>Languages</h2>
+                    <ul>
+                        <li>Russian: Native</li>
+                        <li>English: C1 Advanced (according to <a href="https://cert.efset.org/en/Lkf1v8" target="_blank">EF SET</a> test)</li>
+                    </ul>
+                </section>
+            </div>
+
+            <div class="right-column">
+                <section id="about-me">
                     <h2>About Me</h2>
                     <p>Aspiring Developer. Currently taking a Frontend course to master JavaScript fundamentals and the principles of web services.</p>
                     <p>I am not focused on design or visual styling. My interests lie in data processing logic, algorithms, and working with data structures. My goal is to gain the technical skills to manually implement projects that I currently prototype using AI tools.</p>
                     <p>My long-term goal is to transition into Backend development and database management, where I can apply a structured and systematic approach.</p>
+                </section>        
 
+                <section id="experience">
                     <h2>Experience</h2>
                     <p>Note: These projects were developed in a "vibecoding" format. My role was to act as a Product Owner and System Analyst: I conceptualized the entire business logic, designed the interaction algorithms, and strictly verified the AI-generated results to ensure they met the functional requirements.</p>
                     
@@ -75,7 +90,9 @@
                         <li>Integration Logic: I established the rules for how device access types interact with user permissions, including directional logic (Entry/Exit) for accurate history tracking.</li>
                         <li>UX & Functional Specs: I designed the user flow and  functional requirements for the integrated Telegram bot.</li>
                     </ul>
+                </section>
 
+                <section id="code-examples">
                     <h2>Code Examples</h2>
                     <p><a href="https://www.codewars.com/kata/57a2013acf1fa5bfc4000921" target="_blank">Calculate average</a> task from Codewars:</p>
                     <p>Write a function which calculates the average of the numbers in a given array. Note: Empty arrays should return 0.</p>
@@ -93,7 +110,9 @@ function findAverage(array) {
   }
 }    
                         </code>
-                    </pre>         
+                    </pre>
+                </section>
+            </div>            
         </main>
 
         <footer>
