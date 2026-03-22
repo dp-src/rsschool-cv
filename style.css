@@ -8,15 +8,15 @@
   --nav-font-style: 18px Verdana, sans-serif;
   --nav-background-color: rgb(255, 255, 255);
   --link-hover-color: #9b0000;
-  --max-width: 1000px;
+  --max-width: 900px;
   --padding: 40px;
   --border-color: rgb(32, 32, 32);
 }
 
 /* Link styles */
 a:link, a:visited {
-  color: black;
-  text-decoration: none;
+  color: rgb(0, 0, 0);
+  text-decoration: underline;
 }
 
 a:hover {
@@ -30,9 +30,12 @@ nav a:link, nav a:visited {
 
 nav a:hover, nav a:active {
   color: var(--link-hover-color);
-  border-bottom: 3px dotted var(--link-hover-color);
+  border-bottom: 2px solid var(--link-hover-color);
 }
 
+address a:link, a:visited {
+  text-decoration: none;
+}
 
 /* Navigation and Footer */
 
@@ -88,7 +91,7 @@ main {
 }
 
 .right-column {
-  flex: 6;
+  flex: 7;
   border-left: 2px solid gray;
   padding: 0px 0px 0px var(--padding);
     text-align: justify;
@@ -109,7 +112,7 @@ header {
 
 .job-title {
   letter-spacing: 3.5px;
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(98, 0, 0, 1);
 }
 
 address {
@@ -187,4 +190,8 @@ code {
 
 .dot.filled {
   background-color: black;
+}
+
+.accent-style {
+  font-weight: bold;
 }
