@@ -4,10 +4,14 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --nav-font-style: 18px Verdana, sans-serif;
-  --nav-background-color: rgb(255, 255, 255);
-  --link-hover-color: #9b0000;
+  --nav-background-color: rgb(48, 48, 48);
+  --link-hover-color: #4b0015;
   --max-width: 900px;
   --padding: 40px;
   --border-color: rgb(32, 32, 32);
@@ -24,7 +28,7 @@ a:hover {
 }
 
 nav a:link, nav a:visited {
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   text-decoration: none;
 }
 
@@ -51,10 +55,18 @@ body {
 ul {
   list-style-type: none;
 }
+
+#experience ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
 nav {
   background-color: var(--nav-background-color);
   font: var(--nav-font-style);
   text-transform: uppercase;
+  position: fixed;
+  max-width: var(--max-width);
+  width: 100%;
 }
 
 nav ul {
@@ -82,7 +94,7 @@ footer ul {
 main {
   display: flex;
   flex-direction: row;
-  padding: var(--padding);
+  padding: 80px var(--padding) var(--padding) var(--padding) ;
 }
 
 .left-column {
@@ -94,7 +106,8 @@ main {
   flex: 7;
   border-left: 2px solid gray;
   padding: 0px 0px 0px var(--padding);
-    text-align: justify;
+  text-align: justify;
+  font: 14px/1.8 Arial, sans-serif;
 }
 
 .photo {
@@ -124,6 +137,11 @@ address {
 
 section {
   padding: 0px 0px var(--padding) 0px;
+  scroll-margin-top: 70px;
+}
+
+#code-examples {
+  padding-bottom: 0px;
 }
 
 h2 {
@@ -132,6 +150,13 @@ h2 {
   border-top: 1px solid var(--border-color);
   border-bottom: 1px solid var(--border-color);
   padding: 5px 0px;
+  margin-bottom: 10px;
+  
+}
+
+h3 {  
+  text-transform: uppercase;
+  margin-top: 20px;
   margin-bottom: 10px;
 }
 
@@ -194,4 +219,35 @@ code {
 
 .accent-style {
   font-weight: bold;
+}
+
+/* Skills Section */
+
+.skills-container {
+  display: flex;
+  flex-direction: column;
+} 
+
+.skill-progress {
+  display: inline-block;
+  width: auto;
+  height: 10px;
+  background-color: rgb(165, 165, 165);
+  margin: 0px 0px 10px 0px;
+}
+
+.skill-progress-fill {
+  display: inline-block;
+  height: 10px;
+  background-color: black;
+  margin: 0px 0px 10px 0px;
+}
+
+#experience ul {
+  margin: 15px 0px;
+}
+
+.notes {
+  font-style: italic;
+  padding-bottom: 10px;
 }

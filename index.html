@@ -47,12 +47,32 @@
 
                 <section id="skills">
                     <h2>Skills</h2>
-                        <ul>
-                            <li>Git & GitHub</li>
-                            <li>HTML5</li>
-                            <li>CSS3</li>
-                            <li>Basic Python (Algorithm implementation)</li>
-                        </ul>
+                    <div class="skills-container">
+                        <div class="skill-name">
+                            HTML5, CSS3 & Flexbox
+                        </div>
+                        <div class="skill-progress">
+                            <div class="skill-progress-fill" style="width: 35%"></div>
+                        </div>
+                        <div class="skill-name">
+                            Git, GitHub & CLI
+                        </div>
+                        <div class="skill-progress">
+                            <div class="skill-progress-fill" style="width: 50%"></div>
+                        </div>
+                        <div class="skill-name">
+                            Systematic Learning & Self-Org
+                        </div>
+                        <div class="skill-progress">
+                            <div class="skill-progress-fill" style="width: 75%"></div>
+                        </div>
+                        <div class="skill-name">
+                            Adobe Photoshop
+                        </div>
+                        <div class="skill-progress">
+                            <div class="skill-progress-fill" style="width: 90%"></div>
+                        </div>
+                    </div>
                 </section>
 
                 <section id="languages">
@@ -106,34 +126,48 @@
             <div class="right-column">
                 <section id="about-me">
                     <h2>About Me</h2>
-                    <p>Aspiring Developer. Currently taking a Frontend course to master JavaScript fundamentals and the principles of web services.</p>
-                    <p>I am not focused on design or visual styling. My interests lie in data processing logic, algorithms, and working with data structures. My goal is to gain the technical skills to manually implement projects that I currently prototype using AI tools.</p>
-                    <p>My long-term goal is to transition into Backend development and database management, where I can apply a structured and systematic approach.</p>
+                    <p>Taking a Frontend course to master JavaScript fundamentals and the principles of web services. I am not focused on design or visual styling. My interests lie in data processing logic, algorithms, and working with data structures. My goal is to gain the technical skills to manually implement projects that I currently prototype using AI tools. My long-term goal is to transition into Backend development and database management, where I can apply a structured and systematic approach.</p>
                 </section>        
 
                 <section id="experience">
                     <h2>Experience</h2>
-                    <p>Note: These projects were developed in a "vibecoding" format. My role was to act as a Product Owner and System Analyst: I conceptualized the entire business logic, designed the interaction algorithms, and strictly verified the AI-generated results to ensure they met the functional requirements.</p>
-                    
-                    <p>Seal Ring Selection Calculator (A customer-facing web utility for product discovery and price estimation)</p>
+
+                    <h3>Educational Projects</h3>
+                    <p class="accent-style"><a href="https://github.com/dp-src/rsschool-cv/blob/gh-pages/cv.md" target="_blank">CV#1. Markdown & Git</a> — Educational Project | RS School (2026Q1)</p>
+                    <p>The first completed project within the JS/FE Preschool course.</p>
                     <ul>
-                        <li>Algorithm Design: I designed a complex "dual-search" algorithm that cross-references user-defined size ranges (min/max) with both actual size and strict GOST standards. This ensures the system finds all viable matches even when physical dimensions and standard specifications differ.</li>
-                        <li>Commercial Logic: I conceptualized the logic for dynamic price range estimation based on custom user requirements.</li>
-                        <li>UX & Validation: I developed "foolproof" input scenarios to guide customers through technical parameters, preventing incorrect search queries and ensuring a smooth user journey.</li>
+                        <li><span class="accent-style">Core:</span> Developed a structured CV using Markdown syntax.</li>
+                        <li><span class="accent-style">Tech Stack:</span> Git, GitHub, GitHub Pages, Markdown.</li>
+                        <li><span class="accent-style">Outcome:</span> Created a clean, logically organized content structure with successful deployment via GitHub Pages.</li>
                     </ul>
                     
-                    <p>Access Control System Prototype (A local automation system for a commercial facility.)</p>
+                    <h3>AI-Assisted</h3>
+                    <p class="notes"><span class="accent-style">Note:</span> These projects were developed through <span class="accent-style">AI-Agent Orchestration</span>. I defined system behavior, steering the AI agent through iterative requirements, and performing rigorous functional validation. I managed the development cycle without writing or reading code, focusing instead on business logic, edge-case discovery, and final product integrity.</p>
+                    
+                    <p class="accent-style"><a href="https://www.binrti.ru/podbor-kolec-onlajn/" target="_blank">Seal Ring Selection Calculator</a></p>
+                    <p>A customer-facing web utility for product discovery and price estimation.</p>
                     <ul>
-                        <li>System Logic Design: I defined the logic for filtering and displaying statistics, visit logs, and time-tracking modules.</li>
-                        <li>Feature Concept: I conceptualized the "Registration Mode", where any hardware device can be dynamically assigned as a "registrar" to scan new cards based on specific access types.</li>
-                        <li>Integration Logic: I established the rules for how device access types interact with user permissions, including directional logic (Entry/Exit) for accurate history tracking.</li>
-                        <li>UX & Functional Specs: I designed the user flow and  functional requirements for the integrated Telegram bot.</li>
+                        <li><span class="accent-style">Inclusive Search Logic:</span> Conceptualized a "dual-criteria" matching algorithm. It allows users to find products by either Physical Dimensions or GOST Standards, ensuring a match is found even if specifications differ from physical measurements.</li>
+                        <li><span class="accent-style">Commercial Logic:</span> Defined the rules for dynamic price estimation based on quantity-based volume ranges within the search results.</li>
+                        <li><span class="accent-style">Lead Generation Flow:</span> Designed the end-to-end user journey where selected items are compiled into a formal request and automatically dispatched to a sales manager's email for final manual verification and technical consulting.</li>
+                        <li><span class="accent-style">UX Guardrails:</span> Enforced "foolproof" validation rules to guide users through complex technical parameters, ensuring the AI-generated interface prevents invalid search queries.</li>
+                    </ul>
+                    
+                    <p>Access Control System Prototype</p>
+                    <p>A standalone Access Control System for real-time visitor and staff monitoring (designed for large-scale facilities with 600+ capacity).</p>
+                    <ul>
+                        <li><span class="accent-style">Real-time Flow Monitoring:</span> Engineered a system to monitor facility occupancy by centralizing data from diverse hardware: Dahua turnstiles for guests and Hikvision face-recognition terminals for staff.</li>
+                        <li><span class="accent-style">Data Discovery & Protocol Extraction:</span> Used Wireshark and Browser DevTools to capture raw network traffic and API requests from devices. Directed the AI to decode these proprietary structures to enable hardware-to-server communication without official documentation.</li>
+                        <li><span class="accent-style">Complex Shift Logic:</span> Conceptualized and enforced a time-tracking algorithm for overnight shifts (crossing midnight). The system correctly merges entry/exit events into a single session even when they occur on different calendar days.</li>
+                        <li><span class="accent-style">Scalability & Performance:</span> Engineered the logic to handle 600+ visitors via only 3 turnstiles, ensuring the database (SQLite WAL) remains stable even with 5M+ log records.</li>
+                        <li><span class="accent-style">Telegram Integration:</span> Orchestrated a bot for remote management, device status monitoring, and instant statistics. Implemented automated delivery of styled Excel reports (.xlsx) with custom color-coding directly to the Telegram chat.</li>
+                        <li><span class="accent-style">Autonomy & Self-Healing:</span> The system is fully local (operates without internet), featuring automated database recovery, disk-space protection (log rotation), and a hardware-bound licensing prototype (QR-code based).</li>
                     </ul>
                 </section>
 
                 <section id="code-examples">
                     <h2>Code Examples</h2>
-                    <p><a href="https://www.codewars.com/kata/57a2013acf1fa5bfc4000921" target="_blank">Calculate average</a> task from Codewars:</p>
+                    <p class="accent-style"><a href="https://www.codewars.com/kata/57a2013acf1fa5bfc4000921" target="_blank" class="accent-style">Calculate average</a> task from Codewars:</p>
                     <p>Write a function which calculates the average of the numbers in a given array. Note: Empty arrays should return 0.</p>
                     <pre>
                         <code>
