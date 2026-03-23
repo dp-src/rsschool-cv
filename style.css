@@ -269,10 +269,11 @@ code {
 
 .notes {
   font-style: italic;
-  border-top: 2px dashed gray;
-  padding-top: 20px;
+  border: 2px dashed gray;
+  padding: 20px;
   margin-top: 20px;
   scroll-margin-top: 70px;
+  border-radius: 20px;
 }
 
 .project-title {
@@ -299,6 +300,5 @@ code {
 }
 
 .accent-note {
-  font-weight: bold;
   color: var(--vibrant-accent-color);
 }
