@@ -11,7 +11,7 @@ html {
 :root {
   --nav-font-style: 18px Verdana, sans-serif;
   --dark-accent-color: rgb(48, 48, 48);
-  --max-width: 900px;
+  --max-width: 1000px;
   --padding: 40px;
   --border-color: rgb(32, 32, 32);
   --vibrant-accent-color: #9b0000;
@@ -86,13 +86,13 @@ nav ul {
 }
 
 footer {
-  font: 14px Arial, sans-serif;
+  font: bold 14px Arial, sans-serif;
   letter-spacing: 1px;
-  background-color: rgb(249, 249, 249);
+  border-top: 1px solid gray;
 }
 
 footer ul {
-  padding: 15px 30px;
+  padding: 12px 30px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -107,18 +107,18 @@ footer ul {
 main {
   display: flex;
   flex-direction: row;
-  padding: 80px var(--padding) var(--padding) var(--padding);
+  padding: auto;
 }
 
 .left-column {
-  flex: 3;
-  padding: 0px var(--padding) 0px 0px;
+  padding: 80px var(--padding);
+  background-color: rgb(248, 248, 248);
 }
 
 .right-column {
-  flex: 7;
-  border-left: 2px solid gray;
-  padding: 0px 0px 0px var(--padding);
+  flex: 1;
+  /*border-left: 1px solid var(--border-color);*/
+  padding: 80px var(--padding) 20px var(--padding);
   text-align: justify;
   font: 14px/1.8 Arial, sans-serif;
 }
@@ -138,7 +138,7 @@ header {
 
 .job-title {
   letter-spacing: 3.5px;
-  color: var(--vibrant-accent-color);;
+  color: var(--vibrant-accent-color);
 }
 
 address {
