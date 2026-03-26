@@ -9,7 +9,7 @@ html {
 }
 
 :root {
-  --nav-font-style: 18px Verdana, sans-serif;
+  --nav-font-style: 17px Arial, sans-serif;
   --dark-accent-color: rgb(48, 48, 48);
   --max-width: 1000px;
   --padding: 40px;
@@ -82,7 +82,7 @@ nav ul {
   flex-direction: row;
   gap: 20px;
   justify-content: space-around;
-  padding: 15px;
+  padding: 12px;
 }
 
 footer {
@@ -137,7 +137,8 @@ header {
   }
 
 .job-title {
-  letter-spacing: 3.5px;
+  font-size: 15px;
+  letter-spacing: 4.2px;
   color: var(--vibrant-accent-color);
 }
 
@@ -185,13 +186,13 @@ h3 {
 
 .contact-icon {
   width: 25px;
-  background-color: var(--border-color);
+  height: 25px;
   padding: 3px;
   margin-right: 10px;
 }
 
 .contact-type {
-  border-bottom: 1px solid var(--border-color);
+  border-bottom: 1px dashed rgb(167, 167, 167);
   display: flex;
   align-items: center;
   margin-bottom: 10px;
