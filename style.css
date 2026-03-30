@@ -129,7 +129,7 @@ main {
   margin: 0px auto 20px auto;
 }
 
-header {
+.title {
   padding: 0px 0px 20px 0px;
   text-transform: uppercase;
   line-height: normal;
